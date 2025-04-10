@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.1.0](https://www.github.com/benjibromberg/snakemake-github-action/compare/v2.0.1...v2.1.0) (2025-04-10)
+
+
+### Features
+
+* add snakemake-executor-plugin-slurm compatibility ([01595e5](https://www.github.com/benjibromberg/snakemake-github-action/commit/01595e501858e51245eb83c2776aaea2196c510d))
+
+
+### Bug Fixes
+
+* improper colon usage ([7ece2f6](https://www.github.com/benjibromberg/snakemake-github-action/commit/7ece2f6afb2a9bdf385d26130720c9279f281573))
+
 ### [2.0.1](https://www.github.com/snakemake/snakemake-github-action/compare/v2.0.0...v2.0.1) (2025-04-07)
 
 
