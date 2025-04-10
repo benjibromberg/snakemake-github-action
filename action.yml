@@ -39,9 +39,9 @@ inputs:
     required: false
     default: false
   snakemake-executor-plugin-slurm-version:
-    description: Snakemake executor plugin: slurm version to use. If not specified, uses latest version. Pin a specific version (e.g., '8.25.5') for reproducibility.
+    description: Snakemake executor plugin slurm version to use. Pin a specific version (e.g., '8.25.5') for reproducibility.
     required: false
-    default: '*'
+    default: false
 
 runs:
   using: 'composite'
