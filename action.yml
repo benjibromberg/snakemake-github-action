@@ -38,6 +38,10 @@ inputs:
     description: Install Apptainer (true/false)
     required: false
     default: false
+  snakemake-executor-plugin-slurm-version:
+    description: Snakemake executor plugin: slurm version to use. If not specified, uses latest version. Pin a specific version (e.g., '8.25.5') for reproducibility.
+    required: false
+    default: '*'
 
 runs:
   using: 'composite'
@@ -69,6 +73,7 @@ runs:
           - nodefaults
         dependencies:
           - snakemake ==${{ inputs.snakemake-version }}
+          - snakemake-executor-plugin-slurm ==${{ inputs.snakemake-executor-plugin-slurm-version }}
         EOF
 
     - name: Setup conda
